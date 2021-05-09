@@ -8,6 +8,6 @@ class Books(db.Document):
     imageLink = db.StringField(required=True)
     language = db.StringField(required=True)
     link = db.StringField(required=True)
-    pages = db.IntField(required=True, unique=True)
+    pages = db.IntField(required=True)
     title = db.StringField(required=True)
-    year = db.IntField(required=True, unique=True)
+    year = db.IntField(required=True)
